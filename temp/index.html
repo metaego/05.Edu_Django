@@ -3,6 +3,20 @@
 <head>
     <title>메인 홈페이지</title>
     <link href="./practice.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+    function doSomthing(){
+        // 문서 안의 요소 id가 inputA, inputB를 변수 a, b에 저장
+        let a = documnet.getElementById('inputA').value;
+        let b = document.getElementById('inputB').value;
+
+        // id가 valueA, valueB인 요소의 텍스트를 a, b로 변경
+        document.getElementById('valueA').innerHTML = a;
+        document.getElementById('valueB').innerHTML = b;
+        // id가 valueC인 요소의 텍스트는 a,b를 숫자로 변환한 후 더한 결과값으로 수정
+        documnet.getElementById('valueC').innerHTML = Number(a) + Number(b);
+    }
+    </script>
 </head>
 <body>
     <nav>
@@ -19,6 +33,12 @@
     <p> 문단은 p로 쓰세요. p는 아마도 Paragraph의 앞자를 따온 것이겠지요?</p>
     <a href="https://www.google.com">Go to google</a>
     <hr/> <!-- hr/는 수평선을 그어주는 태그-->
+    <label for="inputA">a</label>
+    <input id="inputA" value=1 onkeyup="doSomthing()">
+    <label for="inputB">b</label>
+    <input id="inputB" value=2 onkeyup="doSomthing()">
+
+    <p><span id="valueA">2</span> + <span id="valueB">3</span> = <span id="valueC">6</span>입니다</p>
 
 </body>
 </html>
