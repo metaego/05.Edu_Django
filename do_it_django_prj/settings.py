@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!iy(b_ct_#-gt1hy)d@=$5hs=9+9v5b7)mx574nk&83t=e=#(j'
+SECRET_KEY = 'django-insecure-v9pbcr1jn3$45w!g7llqo6pfzduagrp3cd+_vm4arl#$(1-p7y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'exam', # 내가 생성한 app 이름 추가 
 ]
 
 MIDDLEWARE = [
